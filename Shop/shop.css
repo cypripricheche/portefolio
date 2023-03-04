@@ -1,0 +1,133 @@
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+/*    background-image: url(https://zupimages.net/up/22/52/amcg.png); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carte {
+    width: 350px;
+    height: 610px;
+    background-color: #3e295c;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+}
+.modele {
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px0;
+}
+.detail p {
+    color: snow;
+    text-align: center;
+    margin-top: 20px;
+}
+.detail h1 {
+    color: #eb2294;
+    display: flex;
+    align-items: center;
+}
+.sneakers {
+    color: rgb(105, 99, 99);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.logo {
+    width: 200px;
+}
+.carte:hover {
+    background: #7272b7;
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+.carte:hover .sneakers {
+    color:snow;
+    transition: all ease 0.5s;
+}
+@media(max-width:720px) {
+    .carte {
+        width: 94%;
+        height: 560px;
+    }
+    .modele {
+        height: 250px;
+    }
+    .detail {
+        font-size: 16px;
+        width: 250px;
+    }
+}
+
+
+.imgcout img {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+/*****************************************/
+/*                TABLEAU                */
+/*****************************************/
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: rgba(0,0,0,0.9);
+}
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.product img {
+    width: 100px;
+    height: 100px;
+}
+.product .description {
+    flex: 1;
+    margin-left: 20px;
+}
+.product .description h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.product .description p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: gray;
+}
+.product .price {
+    font-size: 22px;
+    font-weight: bold;
+}
+h3, .price {
+    color: aliceblue;
+}
