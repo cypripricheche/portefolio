@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/logo/logo.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <img src="./assets/logo/logo.png" alt="" class="logo" />
+      <ul class="main-nav-list">
+        <li><a href="#presentation-section" class="main-nav-link">Présentation</a></li>
+        <li><a href="#experience-section" class="main-nav-link">Expérience</a></li>
+        <li><a href="#projet-section" class="main-nav-link">Projet</a></li>
+        <li><a href="#contact-section" class="main-nav-link">Contact</a></li>
+      </ul>
+    </header>
+    <section class="hero">
+      <img src="./assets/hero/webdev.png" alt="" class="hero-img" />
+      <img src="./assets/hero/bg.jpg" alt="" class="bg" />
+      <div class="hero-description">
+        <h1 class="hero-title">Salut, je suis <span class="dand">Cyprien</span> !</h1>
+        <p class="hero-subheading">Développeur Visual Web !</p>
+      </div>
+      <div class="hero-model">
+        <model-viewer
+          src="./models/desk.glb"
+          camera-controls
+          disable-pan
+          disable-zoom
+          interaction-prompt="none"
+          min-camera-orbit="auto 55deg auto"
+          max-camera-orbit="auto 92deg auto"
+          field-of-view="35.3deg"
+        ></model-viewer>
+      </div>
+    </section>
+    <section id="presentation-section" class="about-me">
+      <div class="about-me-description">
+        <p class="introduction">Qui suis-je ?</p>
+        <h1 class="about-me-title">Salut tout le monde !</h1>
+        <p class="about-me-subheading"> 
+          J'ai récemment commencé mon parcours dans le développement de sites web et de bots, et depuis, je travaille dessus pendant 
+          mon temps libre. Je suis actuellement engagé dans un important projet personnel lié à Discord et à ma communauté de joueurs 
+          de Clash of Clans. Je suis passionné par des designs uniques, intéressants et des fonctionnalités conviviales.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card animation">
+          <img src="./assets/skills/htmlcss.png" alt="" class="htmlImg" />
+          <p class="title">Html & Css</p>
+        </div>
+        <div class="card animation">
+          <img src="./assets/skills/js.png" alt="" class="js" />
+          <p class="title">JavaScript</p>
+        </div>
+        <div class="card animation">
+          <img src="./assets/skills/VisualStudioCode.png" alt="" class="VisualStudioCode" />
+          <p class="title">Visual Studio Code</p>
+        </div>
+        <div class="card animation">
+          <img src="./assets/skills/Bot Terricord.png" alt="" class="BotTerricord" />
+          <p class="title">Bot <br> Terricord</p>
+        </div>
+        <div class="card animation">
+          <img src="./assets/skills/Bot Foxy.png" alt="" class="BotFoxy" />
+          <p class="title">Bot <br> Foxy</p>
+        </div>
+      </div>
+    </section>
+    <section id="experience-section" class="time-line-section">
+      <div class="time-line-content">
+        <div class="heading-description">
+          <p class="introduction">Quelles sont mes expériences ?</p>
+          <h1 class="time-line-subheading">Expérience !</h1>
+        </div>
+        <div class="timeline">
+          <div class="line"></div>
+          <div class="time-line-description">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Stage Découverte</h2>
+              <p class="content-timeline-description">
+                Mon premier stage a été réalisé à la Croix-Rouge Française du 18 au 22 décembre 2017. <br><br>
+                Mon objectif était de m'impliquer dans la gestion de la comptabilité en vue de poursuivre des études pour devenir expert-comptable.</p>
+            </div>
+          </div>
+          <div class="time-line-description">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Développement web</h2>
+              <p class="content-timeline-description">  
+              J'ai commencé à développer des sites web lors des grandes vacances de 2022. <br><br>
+              J'avais pour but de créer mes propres sites web afin de pouvoir les relier via des bots Discord.
+              </p>
+            </div>
+          </div>
+          <div class="time-line-description">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Html & Css</h2>
+              <p class="content-timeline-description">
+                Nous travaillons actuellement sur un site web appelé "Sakura" qui se concentre sur le domaine du cinéma. <br><br>
+                Ce projet est prévu pour être finalisé d'ici la fin de l'année 2024, ce qui représente une durée totale de deux ans.
+              </p>
+            </div>
+          </div>
+          <div class="time-line-description">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Développement bot</h2>
+              <p class="content-timeline-description">
+                En parallèle de mes études, au cours de l'année 2023, j'ai entrepris un projet personnel en créant des bots Discord en utilisant Python. <br><br>
+                L'objectif était d'automatiser mon serveur communautaire. Bien que le bot ne soit pas encore terminé, il est fonctionnel. 
+              </p>
+            </div>
+          </div>
+          <div class="time-line-description">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">JavaScript</h2>
+              <p class="content-timeline-description">
+
+                J'ai découvert cet outil en fin d'année 2023 pour l'utiliser dans le cadre du projet Sakura. <br><br>
+                Bien que je n'aie pas encore beaucoup d'expérience avec cet outil, j'ai hâte d'en apprendre d'avantage et d'approfondir mes connaissances à son sujet.
+              </p>
+            </div>
+          </div>
+          <div class="time-line-description">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Stage La Chatterie</h2>
+              <p class="content-timeline-description">
+                Ce stage débutera en juin 2023 et aura une durée de cinq semaines. <br><br>
+                Mon objectif lors de ce stage sera de développer un site web complet pour la nouvelle entreprise "La Chatterie".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projet-section" class="youtube">
+      <p class="introduction">Quels sont mes projets ?</p>
+      <h1 class="youtube-title">Construisons ensemble nos sites & bots !</h1>
+      <p class="youtube-description">
+        Voici quelques exemples de projets que j'ai réalisés. Certains sont encore en cours d'évolution, d'autres sont déjà finalisés. 
+        Mais nous savons tous que les sites web, tout comme la technologie, sont constamment en évolution. C'est un domaine où les 
+        projets sont sans fin.
+      </p>
+      <div class="videos">
+        <div class="youtube-videos">
+          <img src="./assets/links/SiteWebGSB.png" class="images" alt="" />
+          <h2 class="videos-title">Site Web GSB !</h2>
+          <p class="videos-description">
+            Lors de notre première année de BTS SIO en novembre 2022, nous avons construit notre premier site web en travaillant en 
+            équipe avec l'aide de l'outil Trello pour l'organisation.
+          </p>
+          <a
+            href="https://creamiest-confusion.000webhostapp.com/"
+            target="_blank"
+            class="btn"
+            >Lien du Site</a
+          >
+        </div>
+        <div class="youtube-videos">
+          <img
+            src="./assets/links/ServeurTerricord.png"
+            class="images"
+            alt=""
+          />
+          <h2 class="videos-title">Serveur Bot Terricord !</h2>
+          <p class="videos-description">
+            Je développe un serveur de support pour les bots Discord, où je teste et intègre de nouvelles fonctionnalités en prenant 
+            compte des retours des utilisateurs pour l'évoluer.
+          </p>
+          <a
+            href="https://discord.gg/ESjPQ3WH2W"
+            target="_blank"
+            class="btn"
+            >Lien du Serveur</a
+          >
+        </div>
+        <div class="youtube-videos">
+          <img src="./assets/links/htmlport.png" class="images" alt="" />
+          <h2 class="videos-title">Mon Portfolio !</h2>
+          <p class="videos-description">
+            Ce portfolio me permet de vous présenter mes compétences et mes projets, c'est comme une fenêtre sur mon parcours, 
+            tout comme notre première année de BTS SIO.
+          </p>
+          <a href="#" target="_blank" class="btn">Lien du Site</a>
+        </div>
+      </div>
+    </section>
+    <!-- Final -->
+    <section id="contact-section" class="final">
+      <div class="form-box">
+        <h1 class="form-title">Contact</h1>
+        <div class="form-bg">
+          <form id="form">
+            <div class="form-content">
+              <div class="email-box">
+                <label for="email" class="email-title">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail destination, ex: wd.https@gmail.com"
+                  class="email-input"
+                />
+              </div>
+              <div class="subject-box">
+                <label for="subject" class="subject-title">Subject:</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject E-mail"
+                  class="subject-input"
+                />
+              </div>
+              <div class="message-box">
+                <label for="message" class="message-title">E-mail:</label>
+                <textarea
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder="E-mail Message"
+                  class="message-input"
+                ></textarea>
+              </div>
+              <div id="buttons">
+                <button type="submit" class="send-button" disabled>Send</button>
+                <button class="reset-button" type="reset">Reset</button>
+              </div>
+            </div>
+          </form>
+          <div id="spinner" class="hideSpinner messageSent">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+          <div id="spinner" class="hideSpinner messageSent">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <model-viewer
+        class="robo"
+        src="./models/robot_playground/scene.gltf"
+        camera-controls
+        disable-pan
+        disable-zoom
+        interaction-prompt="none"
+        field-of-view="10deg"
+        autoplay="experiment_Object_159"
+      ></model-viewer>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
